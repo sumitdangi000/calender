@@ -16,7 +16,7 @@ h1{
     justify-content: center;
     align-items: end;
     gap: 20px;
-    margin-top:35px;
+    margin-top:55px;
 }
 
 .day {
@@ -103,11 +103,6 @@ h1{
     /* box-shadow:inset 5px 2px 5px rgb(96, 68, 16); */
 }
 
-aside {
-    height: 300px;
-    width: 60px;
-    margin-left: 200px;
-}
 
 .weekend1,
 .wfh1,
@@ -127,7 +122,7 @@ aside {
     color: (37, 36, 35);
     font-weight: 700;
     border-radius: 15%;
-    /* box-shadow:inset 5px 2px 5px rgb(96, 68, 16); */
+    
 }
 
 .weekend1:hover {
@@ -152,7 +147,7 @@ aside {
     color: rgb(2, 95, 13);
     font-weight: 700;
     border-radius: 15%;
-    /* box-shadow:inset 5px 2px 5px rgb(96, 68, 16); */
+    
 }
 
 .wfh1:hover {
@@ -175,7 +170,7 @@ aside {
     color: rgb(117, 2, 2);
     font-weight: 700;
     border-radius: 15%;
-    /* box-shadow:inset 5px 2px 5px rgb(96, 68, 16); */
+   
 }
 
 .leave1:hover {
@@ -207,4 +202,100 @@ aside {
     filter: brightness(1.15);
     background-color: rgb(68, 69, 68);
     color: rgb(219, 218, 218);
+}
+
+
+.container {
+  margin: 25px auto;
+}
+
+
+aside {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-500px); 
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+
+@media (max-width: 1000px) {
+  aside {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(7, 60px);
+        gap: 20px;
+    }
+    .day,
+    .box,
+    .leave,
+    .weekend,
+    .wfh {
+        width: 60px;
+        height: 60px;
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(7, 50px);
+        gap: 15px;
+    }
+    .day,
+    .box,
+    .leave,
+    .weekend,
+    .wfh {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: repeat(7, 45px);
+        gap: 10px;
+    }
+    .day,
+    .box,
+    .leave,
+    .weekend,
+    .wfh {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 420px) {
+    .container {
+        grid-template-columns: repeat(7, 40px);
+        gap: 7px;
+    }
+    .day,
+    .box,
+    .leave,
+    .weekend,
+    .wfh {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
 }
