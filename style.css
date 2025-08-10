@@ -299,3 +299,36 @@ aside {
         font-size: 14px;
     }
 }
+/* Default size */
+aside .leave1,
+aside .wfh1,
+aside .weekend1 {
+    font-size: 20px;
+}
+
+/* Medium screens */
+@media (max-width: 1024px) {
+    aside .leave1,
+    aside .wfh1,
+    aside .weekend1 {
+        font-size: 18px;
+    }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    aside .leave1,
+    aside .wfh1,
+    aside .weekend1 {
+        font-size: 16px;
+    }
+}
+
+/* Very small screens (phones) */
+@media (max-width: 480px) {
+    aside .leave1,
+    aside .wfh1,
+    aside .weekend1 {
+        font-size: 14px;
+    }
+}
