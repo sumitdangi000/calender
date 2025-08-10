@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Plan</title>
+    <link rel="stylesheet" href="../CSS/grid.css">
+</head>
+
+<body>
+  <h1>Subham Goswami</h1>
+    <div class="container">
+        
+        <div class="day">Mon</div>
+        <div class="day">Tue</div>
+        <div class="day">Wed</div>
+        <div class="day">Thu</div>
+        <div class="day">Fri</div>
+        <div class="day">Sat</div>
+        <div class="day">Sun</div>
+
+        <div class="box sep">15</div>
+        <div class="box sep">16</div>
+        <div class="box sep">17</div>
+        <div class="leave sep">18</div>
+        <div class="leave sep">19</div>
+        <div class="weekend sep">20</div>
+        <div class="weekend sep">21</div>
+        <div class="wfh sep">22</div>
+        <div class="wfh sep">23</div>
+        <div class="wfh sep">24</div>
+        <div class="wfh sep">25</div>
+        <div class="wfh sep">26</div>
+        <div class="weekend sep">27</div>
+        <div class="weekend sep">28</div>
+        <div class="leave sep">29</div>
+        <div class="leave sep">30</div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+
+        <div class="weekend oct">1</div>
+        <div class="weekend oct">2</div>
+        <div class="wfh oct">3</div>
+        <div class="weekend oct">4</div>
+        <div class="weekend oct">5</div>
+        <div class="wfh oct">6</div>
+        <div class="wfh oct">7</div>
+        <div class="leave oct">8</div>
+        <div class="leave oct">9</div>
+        <div class="leave oct">10</div>
+        <div class="weekend oct">11</div>
+        <div class="weekend oct">12</div>
+        <div class="wfh oct">13</div>
+        <div class="wfh oct">14</div>
+        <div class="wfh oct">15</div>
+        <div class="leave oct">16</div>
+        <div class="leave oct">17</div>
+        <div class="weekend oct">18</div>
+        <div class="weekend oct">19</div>
+        <div class="weekend oct">20</div>
+        <div class="leave oct">21</div>
+        <div class="leave oct">22</div>
+        <div class="leave oct">23</div>
+        <div class="leave oct">24</div>
+        <div class="weekend oct">25</div>
+        <div class="weekend oct">26</div>
+    </div>
+    <aside>
+        <div class="leave1"> Leave - 13</div>
+        <div class="wfh1"> WFH - 11</div>
+        <div class="weekend1"> Hoilday</div>
+    </aside>
+</body>
+<script>
+document.querySelector('.leave1').addEventListener('mouseenter', () => {
+  document.querySelectorAll('.leave').forEach(el => el.classList.add('highlight1'));
+});
+document.querySelector('.leave1').addEventListener('mouseleave', () => {
+  document.querySelectorAll('.leave').forEach(el => el.classList.remove('highlight1'));
+});
+
+document.querySelector('.wfh1').addEventListener('mouseenter', () => {
+  document.querySelectorAll('.wfh').forEach(el => el.classList.add('highlight2'));
+});
+document.querySelector('.wfh1').addEventListener('mouseleave', () => {
+  document.querySelectorAll('.wfh').forEach(el => el.classList.remove('highlight2'));
+});
+
+document.querySelector('.weekend1').addEventListener('mouseenter', () => {
+  document.querySelectorAll('.weekend').forEach(el => el.classList.add('highlight3'));
+});
+document.querySelector('.weekend1').addEventListener('mouseleave', () => {
+  document.querySelectorAll('.weekend').forEach(el => el.classList.remove('highlight3'));
+});
+</script>
+
+</html>

@@ -1,0 +1,210 @@
+*{
+    margin:5px 0 0 0;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    row-gap: 1000px;
+    color: rgb(238, 246, 250);
+    background-color: rgb(0, 124, 195);
+    padding: 5px;
+}
+.container {
+    display: grid;
+    height: 60px;
+    grid-template-columns: 60px 60px 60px 60px 60px 60px 60px;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+    margin-top:35px;
+}
+
+.day {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    border-radius: 15%;
+    border: 2px solid black;
+    /* box-shadow:inset 5px 2px 5px rgb(96, 68, 16); */
+}
+
+.wfh {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    background-color: rgb(152, 242, 166);
+    border-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(2, 95, 13);
+    font-weight: 700;
+    border-radius: 15%;
+    /* box-shadow:inset 5px 2px 5px rgb(96, 68, 16); */
+}
+
+.box:hover {
+    background-color: rgb(96, 68, 16);
+    color: rgb(251, 244, 235);
+    transition: 0.4s;
+    border-radius: 15%;
+}
+
+.leave {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    background-color: rgb(250, 140, 140);
+    border-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(117, 2, 2);
+    font-weight: 700;
+    border-radius: 15%;
+    /* box-shadow:inset 5px 2px 5px rgb(96, 68, 16); */
+}
+
+
+.weekend {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    background-color: rgb(176, 167, 159);
+    border-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(37, 36, 35);
+    font-weight: 700;
+    border-radius: 15%;
+    /* box-shadow:inset 5px 2px 5px rgb(96, 68, 16); */
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    /* background-color: rgb(242, 209, 174); */
+    border-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(133, 85, 1);
+    font-weight: 700;
+    border-radius: 15%;
+    /* box-shadow:inset 5px 2px 5px rgb(96, 68, 16); */
+}
+
+aside {
+    height: 300px;
+    width: 60px;
+    margin-left: 200px;
+}
+
+.weekend1,
+.wfh1,
+.leave1 {
+    margin: 20px;
+}
+
+.weekend1 {
+    width: 120px;
+    height: 60px;
+    display: flex;
+    background-color: rgb(176, 167, 159);
+    border-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: (37, 36, 35);
+    font-weight: 700;
+    border-radius: 15%;
+    /* box-shadow:inset 5px 2px 5px rgb(96, 68, 16); */
+}
+
+.weekend1:hover {
+    outline: 3px solid #000;
+    outline-offset: 2px;
+    filter: brightness(1.15);
+    background-color: rgb(68, 69, 68);
+    color: rgb(219, 218, 218);
+}
+
+
+
+.wfh1 {
+    width: 120px;
+    height: 60px;
+    display: flex;
+    background-color: rgb(152, 242, 166);
+    border-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(2, 95, 13);
+    font-weight: 700;
+    border-radius: 15%;
+    /* box-shadow:inset 5px 2px 5px rgb(96, 68, 16); */
+}
+
+.wfh1:hover {
+    outline: 3px solid #000;
+    outline-offset: 2px;
+    filter: brightness(1.15);
+    background-color: rgb(38, 142, 54);
+    color: rgb(219, 218, 218);
+}
+
+.leave1 {
+    width: 120px;
+    height: 60px;
+    display: flex;
+    background-color: rgb(250, 140, 140);
+    border-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(117, 2, 2);
+    font-weight: 700;
+    border-radius: 15%;
+    /* box-shadow:inset 5px 2px 5px rgb(96, 68, 16); */
+}
+
+.leave1:hover {
+    outline: 3px solid #000;
+    outline-offset: 2px;
+    background-color: rgb(209, 81, 81);
+    filter: brightness(1.15);
+}
+
+.highlight1 {
+    outline: 3px solid #000;
+    outline-offset: 2px;
+    filter: brightness(1.15);
+    background-color: rgb(209, 81, 81);
+    color: rgb(219, 218, 218);
+}
+
+.highlight2 {
+    outline: 3px solid #000;
+    outline-offset: 2px;
+    filter: brightness(1.15);
+    background-color: rgb(38, 142, 54);
+    color: rgb(219, 218, 218);
+}
+
+.highlight3 {
+    outline: 3px solid #000;
+    outline-offset: 2px;
+    filter: brightness(1.15);
+    background-color: rgb(68, 69, 68);
+    color: rgb(219, 218, 218);
+}
